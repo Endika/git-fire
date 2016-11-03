@@ -2,7 +2,7 @@
 
 ### ![Inspiration](https://i.imgur.com/3POtveC.jpg)
 
-`git-fire` is a Git plugin that **helps in the event of an emergency** by switching to the repository's root directory, adding all current files, committing, and pushing to a new branch (to prevent merge conflicts).
+`git-fire` is a Git plugin that **helps in the event of an emergency** by switching to the repository's root directory, adding all current files, committing, and pushing commits and all stashes to a new branch (to prevent merge conflicts).
 
 **Alias it to [`git out`](https://np.reddit.com/r/ProgrammerHumor/comments/3nc531/in_case_of_fire/cvmxnv1) or [`git going`](https://np.reddit.com/r/ProgrammerHumor/comments/3nc531/in_case_of_fire/cvmsajb) for comedic effect.**
 
@@ -15,7 +15,8 @@
 - creates new branch `fire-<current branch>-<user email>-<current epoch>`
 - adds all files
 - commits with `"Fire! Branch <new branch>"` or custom message
-- pushes to remote
+- pushes commits to remote
+- pushes all stashes to remote
 
 ## Usage
 
@@ -27,9 +28,15 @@
 
 Just copy `git-fire` to your `$PATH` and ensure it is an executable (`chmod +x git-fire`) and you're good to go. 👍
 
-`git-fire` is also installable via [NPM](https://npmjs.com/git-fire). Just run `npm install -g git-fire`, which will copy the `git-fire` binary to your `$PATH`.
+`git-fire` is also available via [`npm`](https://npmjs.com/git-fire). Just run `npm install -g git-fire`, which will copy the `git-fire` binary to your `$PATH`.
 
 Also make sure you have Git installed.
+
+## Disclaimer
+
+Your life is always more valuable than any code. You should leave the building immediately in a true emergency.
+
+Code can be re-written, but humans cannot.
 
 ## Credit
 
